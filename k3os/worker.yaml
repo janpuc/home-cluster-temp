@@ -13,4 +13,4 @@ k3os:
   - "--server"
   - "https://192.168.0.20:6443"
   - "--disable"
-  - servicelb,traefik,local-storage
+  - "servicelb,traefik,local-storage"

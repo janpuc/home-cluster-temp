@@ -1,0 +1,15 @@
+ssh_authorized_keys:
+- "github:janpuc"
+k3os:
+  password: "h!CL7SB94RoB&NEEXGTqB5GiS%KcC!fYkGnCswbB"
+  dns_nameservers:
+  - 1.1.1.1
+  - 1.0.0.1
+  ntp_servers:
+  - 0.pl.pool.ntp.org
+  - 1.pl.pool.ntp.org
+  token: "tpwi&6Q^FSW$gp4PZGG*faG8EoRH7BhKa2$VSK#X"
+  k3s_args:
+  - "--cluster-init"
+  - "--disable"
+  - servicelb,traefik,local-storage

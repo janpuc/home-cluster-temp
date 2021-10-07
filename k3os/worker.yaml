@@ -10,8 +10,7 @@ k3os:
   - 0.pl.pool.ntp.org
   - 1.pl.pool.ntp.org
   token: kubernetes
+  server_url: https://192.168.0.20:6443
   k3s_args:
-  - "--server"
-  - "https://192.168.0.20:6443"
   - "--disable"
   - "servicelb,traefik,local-storage"

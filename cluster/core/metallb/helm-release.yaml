@@ -5,7 +5,7 @@ metadata:
   name: metallb
   namespace: kube-system
 spec:
-  interval: 5m
+  interval: 1h
   chart:
     spec:
       # renovate: registryUrl=https://metallb.github.io/metallb

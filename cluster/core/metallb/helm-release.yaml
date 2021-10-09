@@ -8,13 +8,13 @@ spec:
   interval: 1h
   chart:
     spec:
-    # renovate: registryUrl=https://metallb.github.io/metallb
-    chart: metallb
-    version: 0.10.2
-    sourceRef:
-      kind: HelmRepository
-      name: metallb
-      namespace: flux-system
+      # renovate: registryUrl=https://metallb.github.io/metallb
+      chart: metallb
+      version: 0.10.2
+      sourceRef:
+        kind: HelmRepository
+        name: metallb
+        namespace: flux-system
   values:
     existingConfigMap: config
     prometheus:

@@ -17,9 +17,6 @@ spec:
         namespace: flux-system
   values:
     existingConfigMap: config
-    prometheus:
-      podMonitor:
-        enabled: true
     controller:
       enabled: true
       image:

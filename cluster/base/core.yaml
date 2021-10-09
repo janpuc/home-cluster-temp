@@ -6,8 +6,8 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  # dependsOn:
-  #   - name: crds
+  dependsOn:
+    - name: cluster-namespaces
   path: ./cluster/core
   prune: true
   sourceRef:

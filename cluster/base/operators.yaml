@@ -6,11 +6,9 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: cluster-crds
     - name: cluster-namespaces
-    - name: cluster-operators
   interval: 10m0s
-  path: ./cluster/core
+  path: ./cluster/operators
   prune: true
   sourceRef:
     kind: GitRepository

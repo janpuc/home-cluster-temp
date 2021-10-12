@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: cluster-crds
+    # - name: cluster-crds
     - name: cluster-namespaces
     - name: cluster-operators
   interval: 10m0s

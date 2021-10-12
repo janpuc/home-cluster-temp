@@ -7,7 +7,7 @@ spec:
   acme:
     email: ${USER_EMAIL}
     server: https://acme-v02.api.letsencrypt.org/directory
-    privateSecretKeyRef:
+    privateKeySecretRef:
       name: personal-acme-key
     solvers:
     - dns01:

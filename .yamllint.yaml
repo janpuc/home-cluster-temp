@@ -2,6 +2,7 @@
 ignore: |
   *.sops.*
   gotk-components.yaml
+  gotk-sync.yaml
 extends: default
 rules:
   truthy:

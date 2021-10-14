@@ -32,4 +32,3 @@ spec:
   values:
     operatorNamespace: istio-operator
     istioNamespace: istio-system
-    

@@ -1,33 +1,21 @@
 ---
-
-yaml-files:
-  - '*.yaml'
-  - '*.yml'
-  - '.yamllint'
-
+ignore: |
+  *.sops.*
+  gotk-components.yaml
+extends: default
 rules:
-  braces: enable
-  brackets: enable
-  colons: enable
-  commas: enable
-  comments:
-    level: warning
-  comments-indentation:
-    level: warning
-  document-end: disable
-  document-start:
-    level: warning
-  empty-lines: enable
-  empty-values: disable
-  hyphens: enable
-  indentation: enable
-  key-duplicates: enable
-  key-ordering: disable
-  line-length: enable
-  new-line-at-end-of-file: enable
-  new-lines: enable
-  octal-values: disable
-  quoted-strings: disable
-  trailing-spaces: enable
   truthy:
-    level: warning
+    allowed-values: ["true", "false"]
+  comments:
+    min-spaces-from-content: 1
+  line-length:
+    max: 80
+  braces:
+    min-spaces-inside: 0
+    max-spaces-inside: 1
+  brackets:
+    min-spaces-inside: 0
+    max-spaces-inside: 0
+  indentation:
+    spaces: 2
+    indent-sequences: consistent

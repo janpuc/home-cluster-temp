@@ -15,19 +15,18 @@ spec:
           service: oauth2-proxy.system-ingress.svc.cluster.local
           port: 80
           includeHeadersInCheck:
-          - authorization
-          - cookie
+            - authorization
+            - cookie
           headersToUpstreamOnAllow:
-          - authorization
-          - path
-          - x-auth-request-user
-          - x-auth-request-email
-          - x-auth-request-access-token
+            - authorization
+            - path
+            - x-auth-request-user
+            - x-auth-request-email
+            - x-auth-request-access-token
           headersToDownstreamOnDeny:
-          - content-type
-          - set-cookie
+            - content-type
+            - set-cookie
     accessLogFile: /dev/stdout
     enableTracing: false
     outboundTrafficPolicy:
       mode: ALLOW_ANY
-      
